@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Kanit";
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +20,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-image: linear-gradient(to bottom, #cc0002, #a30002);
+    background: rgb(82, 82, 82);
     border-radius: 20px;
 }
 
@@ -46,6 +47,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 nav {
+    width: 250px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +57,25 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin-left: 15px;
-    
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav a:hover{
+    background-color: #cc0002;
+    border: #580202 2px solid;
+
+}
+
+.login{
+    background-color: #580202;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.login:hover{
+    background-color: #141414;
+    border: #580202 2px solid;
 }
 
 .inicio {
@@ -63,7 +83,7 @@ nav a {
     height: 550px;
     display: flex;
     justify-content: space-between;
-    background-image: radial-gradient( circle at left, #cc0002, #a30002, #141414, #141414,#141414,#141414);
+    background-image: radial-gradient( circle at left, #cc0002, #a30002, #820002, #141414, #141414,#141414,#141414, #141414, #141414);
 }
 
 .texto {
@@ -131,4 +151,46 @@ hr{
 
 .ouro .titulo h2{
     color: gold;
+}
+
+.resto h2{
+    display: flex;
+    justify-content: center;
+}
+
+.luta{
+    width: 100%;
+    height: 150px;
+    background-image: url(luta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.danca{
+    width: 100%;
+    height: 150px;
+    background-image: url(danca.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.musculo{
+    width: 100%;
+    height: 150px;
+    background-image: url(musculo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
