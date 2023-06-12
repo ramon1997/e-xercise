@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="shortcut icon" href="peso.png" type="image/x-icon">
     <title>E-xercise</title>
 </head>
@@ -15,10 +16,17 @@
             <img src="peso.png">
             <h1>E-xercise</h1>
         </div>
-        <nav>
-            <a href="#planos">Planos</a>
-            <a href="#servico">Serviços</a>
-            <a href="" class="login">Login</a>
+        <nav class="barra">
+            <div class="mobile">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#servico">Serviços</a></li>
+                <li><a href="#" class="login">Login</a></li>
+            </ul>
         </nav>
     </div>
     <div class="inicio">
@@ -112,7 +120,7 @@
     <footer>
         <P>&copy; Ramon Santana.</P>
     </footer>
-
+    <script src="js.js"></script>
 </body>
 
 </html>
